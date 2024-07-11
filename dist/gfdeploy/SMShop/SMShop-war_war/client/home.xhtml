@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <ui:composition template="/layout/clientTemplate.xhtml">
+            <ui:define name="content">
+                <div id="demo" class="carousel slide" data-ride="carousel">
+
+                    <!-- Indicators -->
+                    <ul class="carousel-indicators">
+                        <li data-target="#demo" data-slide-to="0" class="active"></li>
+                        <li data-target="#demo" data-slide-to="1"></li>
+                        <li data-target="#demo" data-slide-to="2"></li>
+                        <li data-target="#demo" data-slide-to="3"></li>
+                        <li data-target="#demo" data-slide-to="4"></li>
+                    </ul>
+
+                    <!-- The slideshow -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <h:graphicImage value="/resources/images/banner/1.jpg" alt="Los Angeles" width="100%" height="500"/>
+                        </div>
+                        <div class="carousel-item">
+                            <h:graphicImage value="/resources/images/banner/2.jpg" alt="Chicago" width="100%" height="500"/>
+                        </div>
+                        <div class="carousel-item">
+                            <h:graphicImage value="/resources/images/banner/3.jpg" alt="New York" width="100%" height="500"/>
+                        </div>
+                        <div class="carousel-item">
+                            <h:graphicImage value="/resources/images/banner/4.jpg" alt="New York" width="100%" height="500"/>
+                        </div>
+                        <div class="carousel-item">
+                            <h:graphicImage value="/resources/images/banner/5.jpg" alt="New York" width="100%" height="500"/>
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#demo" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+                <div id="new-product" class="mt-4">
+                    <div class="text-center">
+                        <h2 class="title-client">New Products</h2>
+                    </div>
+                    <div>
+                        <div class="container">
+                            <div class="row mt-5">
+                                <div class="col-md-3">
+                                    <h:link styleClass="text-decoration-none">
+                                        <div class="new-pro-box">
+                                        <h:graphicImage class="new-pro-images" value="/resources/images/product/1_/1.jpg"/>
+                                        <p class="long--dots new-pro-name">Yonex Nanoflare Wex Badminton Racket (Central Inland)</p>
+                                        <p class="new-pro-price">68.75 $</p>
+                                    </div>
+                                    </h:link>
+                                </div>
+                                <div class="col-md-3">
+                                    <h:link styleClass="text-decoration-none">
+                                        <div class="new-pro-box">
+                                        <h:graphicImage class="new-pro-images" value="/resources/images/product/1_/1.jpg"/>
+                                        <p class="long--dots new-pro-name">Yonex Nanoflare Wex Badminton Racket (Central Inland)</p>
+                                        <p class="new-pro-price">68.75 $</p>
+                                    </div>
+                                    </h:link>
+                                </div>
+                                <div class="col-md-3">
+                                    <h:link styleClass="text-decoration-none">
+                                        <div class="new-pro-box">
+                                        <h:graphicImage class="new-pro-images" value="/resources/images/product/1_/1.jpg"/>
+                                        <p class="long--dots new-pro-name">Yonex Nanoflare Wex Badminton Racket (Central Inland)</p>
+                                        <p class="new-pro-price">68.75 $</p>
+                                    </div>
+                                    </h:link>
+                                </div>
+                                <div class="col-md-3">
+                                    <h:link styleClass="text-decoration-none">
+                                        <div class="new-pro-box">
+                                        <h:graphicImage class="new-pro-images" value="/resources/images/product/1_/1.jpg"/>
+                                        <p class="long--dots new-pro-name">Yonex Nanoflare Wex Badminton Racket (Central Inland)</p>
+                                        <p class="new-pro-price">68.75 $</p>
+                                    </div>
+                                    </h:link>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div></div>
+            </ui:define>
+        </ui:composition>
+    </h:body>
+</html>
